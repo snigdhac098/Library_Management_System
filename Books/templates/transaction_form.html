@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start; /* উপরের দিকে নিতে flex-start */
+            height: 100vh;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding-top: 100px; /* উপরের দিকে শিফট করার জন্য */
+        }
+        .form-container {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+            width: 400px; /* ফর্ম বড় করা */
+            text-align: center;
+        }
+        input {
+            width: 100%;
+            padding: 12px;
+            margin: 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 18px; /* ইনপুট ফন্ট বড় করা */
+        }
+        button {
+            background: #007BFF;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="form-container">
+        <form id="amountForm">
+            <label for="amount"><b>Amount</b></label>
+            <input type="text" id="amount" placeholder="Enter amount" required>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+</html>
